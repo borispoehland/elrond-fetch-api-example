@@ -11,5 +11,5 @@ type IUseElrondStatsReturnType = IUseElrondApi<IEconomicsFields>
 const fields = keys<IEconomicsFields>() // ["price", "marketCap"]
 
 export const useElrondStats = (): IUseElrondStatsReturnType => {
-    return useElrondApi('/economics', { fields: ['price', 'marketCap'] })
+    return useElrondApi('/economics', { fields })
 }
