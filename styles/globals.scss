@@ -1,0 +1,36 @@
+@import '~bootstrap/scss/bootstrap';
+
+.flex-center {
+  @extend .d-flex, .align-items-center, .justify-content-center;
+}
+
+.nft-grid {
+  @include media-breakpoint-up(sm) { 
+    column-count: 2;
+  }
+  @include media-breakpoint-up(lg) { 
+    column-count: 3;
+  }
+  @include media-breakpoint-up(xl) { 
+    column-count: 4;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
